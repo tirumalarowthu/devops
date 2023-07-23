@@ -12,8 +12,7 @@ function App() {
     <div className="App">
       <h2>Hello </h2>
       <h4>This is my first project ,Jai sriram</h4>
-      <h5>Hello noamadlfsfjl</h5>
-      <h4>abslfjldsfjf</h4>
+      <h4>Program madeness</h4>
       <button onClick={getData}>Click for get data from server</button>
       {
         data !=="" ?<p>{data}</p>:<p>No data availble</p>
