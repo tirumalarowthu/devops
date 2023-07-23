@@ -4,14 +4,14 @@ const cors=require("cors")
 app.use(cors())
 const path= require("path")
 app.use(express.json())
-app.get("/api",async(req,res)=>{
+app.get("/",async(req,res)=>{
     res.send("hello world")
 })
 const _dirname = path.dirname("")
-const builPath = path.join(_dirname, "../client/build");
+const builPath = path.join(_dirname, "./client/build");
 // app.use(express.static(builPath))
 app.use(express.static(path.join(builPath)));
-app.get("/*", function (req, res) {
+app.get("/client", function (req, res) {
     res.sendFile('index.html',
         { root: path.join(_dirname, "../client/build") },
         function (err) {
