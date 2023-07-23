@@ -38,6 +38,13 @@ jobs:
       working-directory: ./server
       run: npm start
 
+    # - name: adding env file
+    #   run: |
+    #   touch .env
+    #   echo "${{secrets.PROD_ENV_FILE}}" > .env
+    # - run: pm2 restart atsapp
+
+
 # name: Node.js CI
 
 # on:
