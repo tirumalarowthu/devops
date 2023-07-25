@@ -36,7 +36,7 @@ jobs:
 
     - name: Start Server
       working-directory: ./server
-      run: pm2 start server.js --name server
+      run: pm2 restart server
 
     # - name: adding env file
     #   run: |
