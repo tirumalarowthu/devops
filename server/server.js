@@ -5,7 +5,7 @@ app.use(cors())
 const path= require("path")
 app.use(express.json())
 app.get("/",async(req,res)=>{
-    res.send("CI /Cd pipeline for the aws git hub runner")
+    res.send("deployment at 5 o clock ")
 })
 const _dirname = path.dirname("")
 const builPath = path.join(_dirname, "../client/build");
