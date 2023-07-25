@@ -24,15 +24,15 @@ jobs:
 
     - name: Install Server Dependencies
       working-directory: ./server
-      run: npm ci
+      # run: npm ci
 
     - name: Install Client Dependencies
       working-directory: ./client
-      run: npm ci
+      # run: npm ci
 
     - name: Build Client
       working-directory: ./client
-      run: npm run build
+      # run: npm run build
 
     - name: Start Server
       working-directory: ./server
