@@ -36,7 +36,6 @@ jobs:
 
     - name: Start Server
       working-directory: ./server
-      run: pm2 server --name veeraserver
 
 
     # - name: adding env file
