@@ -5,7 +5,7 @@ app.use(cors())
 const path= require("path")
 app.use(express.json())
 app.get("/",async(req,res)=>{
-    res.send("deployment at 5 o clock ")
+    res.send("Hello world ,Welcome to Auguest month")
 })
 const _dirname = path.dirname("")
 const builPath = path.join(_dirname, "../client/build");
