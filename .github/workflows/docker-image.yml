@@ -26,3 +26,6 @@ jobs:
       
       - name: Push the Docker image
         run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/devops:check
+
+      - name: Run Docker container
+        run: docker run -d -p 9123:9005 ${{ secrets.DOCKER_HUB_USERNAME }}/devops:check
